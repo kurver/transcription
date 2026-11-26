@@ -1,0 +1,30 @@
+.inlineForm { display: flex; gap: var(--space-2); margin-bottom: var(--space-5); max-width: 36rem; }
+.muted { color: var(--color-text-muted); font-size: var(--text-xs); }
+.stack { display: flex; flex-direction: column; gap: var(--space-4); }
+.buttons { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+.transcript { margin-bottom: var(--space-6); }
+.transcript pre { line-height: var(--leading-relaxed); max-width: 72ch; }
+.editor { margin-bottom: var(--space-6); }
+.history { list-style: none; margin: var(--space-4) 0 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-3); }
+.historyMeta { display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; font-size: var(--text-sm); }
+.comment { color: var(--color-text-muted); font-size: var(--text-sm); margin-top: var(--space-1); }
+.details { margin-top: var(--space-2); }
+.details summary { cursor: pointer; color: var(--color-link); font-size: var(--text-sm); }
+.diff { margin-top: var(--space-2); border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; font-size: var(--text-xs); }
+.diffLine { padding: 0 var(--space-3); white-space: pre-wrap; }
+.add { background: var(--diff-add-bg); color: var(--diff-add-fg); }
+.remove { background: var(--diff-remove-bg); color: var(--diff-remove-fg); }
+.overdue { color: var(--tone-danger-fg); font-weight: var(--weight-medium); }
+.formGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: var(--space-4); }
+.fieldset { border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-3) var(--space-4) var(--space-4); display: flex; flex-direction: column; gap: var(--space-2); }
+.fieldset legend { font-size: var(--text-sm); font-weight: var(--weight-medium); padding: 0 var(--space-2); }
+.customRow { display: grid; grid-template-columns: 1fr 2fr auto; gap: var(--space-2); align-items: center; }
+.meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: var(--space-4); margin: 0; }
+.meta dt { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-text-muted); }
+.meta dd { margin: var(--space-1) 0 0; font-size: var(--text-sm); }
+.section { margin-bottom: var(--space-6); }
+.section > h3 { margin-bottom: var(--space-3); }
+.row { display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; }
+.verdict { display: flex; flex-direction: column; gap: var(--space-3); }
+.nowrap { white-space: nowrap; }
+.audio { width: 100%; }

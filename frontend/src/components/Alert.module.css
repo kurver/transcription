@@ -1,0 +1,3 @@
+.alert { padding: var(--space-3) var(--space-4); border: 1px solid; border-radius: var(--radius-md); font-size: var(--text-sm); margin-bottom: var(--space-4); }
+.danger { color: var(--tone-danger-fg); background: var(--tone-danger-bg); border-color: var(--tone-danger-border); }
+.info { color: var(--tone-info-fg); background: var(--tone-info-bg); border-color: var(--tone-info-border); }

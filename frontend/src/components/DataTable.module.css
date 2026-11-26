@@ -1,0 +1,8 @@
+.wrap { overflow-x: auto; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
+.table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
+.table :is(th, td) { text-align: left; padding: var(--space-3) var(--space-4); border-bottom: 1px solid var(--color-border); }
+.table th { font-size: var(--text-xs); font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-text-muted); background: var(--color-surface-muted); }
+.table tbody tr:last-child td { border-bottom: 0; }
+.table tbody tr:hover { background: var(--color-surface-muted); }
+.empty { text-align: center !important; color: var(--color-text-muted); padding: var(--space-8) var(--space-4) !important; }
+.empty:hover { background: transparent; }

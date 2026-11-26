@@ -1,0 +1,58 @@
+/* Semantic tokens: the only layer components and pages may reference. Add new colours here.
+   Each colour is defined once as light-dark(<light>, <dark>). The active side is chosen by `color-scheme`:
+   follows the OS by default, overridden by <html data-theme="light|dark"> (set by the theme toggle). */
+:root {
+  color-scheme: light dark;
+
+  --color-bg: light-dark(var(--gray-50), var(--gray-900));
+  --color-surface: light-dark(#ffffff, var(--gray-800));
+  --color-surface-muted: light-dark(var(--gray-100), #162033);
+  --color-border: light-dark(var(--gray-200), var(--gray-700));
+  --color-border-strong: light-dark(var(--gray-300), var(--gray-600));
+  --color-control-border: light-dark(var(--gray-500), var(--gray-400));   /* inputs/secondary buttons: >= 3:1 on surface */
+
+  --color-text: light-dark(var(--gray-900), var(--gray-100));
+  --color-text-muted: light-dark(var(--gray-600), var(--gray-400));
+  --color-text-inverse: light-dark(#ffffff, var(--gray-900));
+
+  --color-accent: var(--blue-600);                                         /* fills (buttons) */
+  --color-accent-hover: var(--blue-700);
+  --color-accent-subtle: light-dark(var(--blue-50), var(--blue-900));
+  --color-on-accent: #ffffff;
+  --color-link: light-dark(var(--blue-700), var(--blue-300));              /* text/links */
+  --color-focus-ring: light-dark(var(--blue-500), var(--blue-400));
+
+  --tone-neutral-fg: light-dark(var(--gray-700), var(--gray-300));
+  --tone-neutral-bg: light-dark(var(--gray-100), var(--gray-700));
+  --tone-neutral-border: light-dark(var(--gray-200), var(--gray-600));
+  --tone-info-fg: light-dark(var(--blue-800), var(--blue-200));
+  --tone-info-bg: light-dark(var(--blue-50), var(--blue-900));
+  --tone-info-border: light-dark(var(--blue-200), var(--blue-800));
+  --tone-success-fg: light-dark(var(--green-800), var(--green-200));
+  --tone-success-bg: light-dark(var(--green-50), var(--green-900));
+  --tone-success-border: light-dark(var(--green-200), var(--green-800));
+  --tone-warning-fg: light-dark(var(--amber-800), var(--amber-200));
+  --tone-warning-bg: light-dark(var(--amber-50), var(--amber-900));
+  --tone-warning-border: light-dark(var(--amber-200), var(--amber-800));
+  --tone-danger-fg: light-dark(var(--red-800), var(--red-200));
+  --tone-danger-bg: light-dark(var(--red-50), var(--red-900));
+  --tone-danger-border: light-dark(var(--red-200), var(--red-800));
+  --tone-review-fg: light-dark(var(--violet-800), var(--violet-200));
+  --tone-review-bg: light-dark(var(--violet-50), var(--violet-900));
+  --tone-review-border: light-dark(var(--violet-200), var(--violet-800));
+
+  --color-danger: var(--red-700);
+  --color-danger-hover: light-dark(var(--red-800), var(--red-600));
+
+  --diff-add-bg: light-dark(var(--green-100), var(--green-900));
+  --diff-add-fg: light-dark(var(--green-900), var(--green-200));
+  --diff-remove-bg: light-dark(var(--red-100), var(--red-900));
+  --diff-remove-fg: light-dark(var(--red-900), var(--red-200));
+
+  --shadow-sm: 0 1px 2px light-dark(rgb(15 23 42 / 0.06), rgb(0 0 0 / 0.4));
+  --shadow-md: 0 4px 12px light-dark(rgb(15 23 42 / 0.08), rgb(0 0 0 / 0.45));
+}
+
+/* Explicit user choice from the theme toggle; absence of data-theme means "follow the system". */
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
